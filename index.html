@@ -78,9 +78,6 @@
       border-radius: 6px;
       transition: 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 0 10px #ff4500;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
     }
     .steam-btn-navbar:hover {
       background-color: #ffae72;
@@ -97,9 +94,7 @@
 
     /* Hero */
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg');
-      background-size: cover;
-      background-position: center;
+      background: linear-gradient(135deg, #1a1a1a, #333333); /* placeholder gradient */
       padding: 140px 20px;
       text-align: center;
       animation: heroGlow 2s infinite alternate;
@@ -163,27 +158,6 @@
     /* Fade-in sections */
     .fade-section { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
     .fade-section.visible { opacity: 1; transform: translateY(0); }
-
-    /* Steam button inside story */
-    .steam-btn-story {
-      background-color: #ff4500;
-      color: #0d0d0d;
-      font-weight: bold;
-      padding: 10px 16px;
-      border-radius: 6px;
-      box-shadow: 0 0 10px #ff4500;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      transition: 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-    }
-    .steam-btn-story:hover {
-      background-color: #ffae72;
-      text-shadow: 0 0 6px #0d0d0d;
-      box-shadow: 0 0 20px #ff4500, 0 0 35px #ff4500;
-      transform: translateY(-2px);
-    }
   </style>
 </head>
 <body>
@@ -278,39 +252,22 @@
 
 <section id="story" class="fade-section">
   <h2>The Core Story</h2>
-  <p>In Radfall, players step into the shoes of <strong>Alex Rainer</strong>, a survivor in a world forever changed by Project Helix. After the 2029 nuclear plant explosion, humanity was transformed into Echoforms — twisted, mutated echoes of their former selves, retaining fragments of memory, emotion, and identity. Alex’s sister, Dr. Elara Rainer, disappeared during the chaos, leaving only cryptic clues and journal entries to guide him. Survival, morality, and discovery collide in a journey spanning the Fringe, Deadlight Fields, and the Core.</p>
+  <p>Alex Rainer searches for his sister after the Helix virus mutates humans into Echoforms. The story spans the Fringe, Deadlight Fields, and the Core, with dangerous enemies, moral choices, and environmental storytelling.</p>
 
   <h3>The Fringe – Survival’s Edge</h3>
-  <p>The Fringe is a transitional zone between normal civilization and the irradiated wilds. Alex must adapt quickly: scavenging limited resources, crafting makeshift weapons, and learning to navigate a hostile environment. Here, Echoforms like Lurkers, Shriekers, and Wailers test his awareness and reaction. Environmental storytelling is rich — scattered journals, graffiti, broken toys, and abandoned camps hint at the human lives that were lost.</p>
+  <p>Alex scavenges, crafts, and fights early Echoforms. Environmental storytelling builds the mood and mystery.</p>
 
   <h3>Deadlight Fields – The Heart of Mutation</h3>
-  <p>Moving deeper, Alex enters the Deadlight Fields, a desolate region of extreme radiation, shattered landscapes, and twisted industrial remnants. Striders hunt with terrifying speed, Bleachers embody radiation’s toll on flesh, and Sirens manipulate sound to confuse intruders. Here, Alex uncovers the darker truths of Project Helix: failed experiments, containment breaches, and moral compromises made in pursuit of immortality.</p>
+  <p>Radiation spikes, advanced Echoforms, and deeper narrative reveal Project Helix’s failures. Choices matter.</p>
 
   <h3>The Core – Confronting Kryne</h3>
-  <p>The Core is the ultimate crucible, the epicenter of mutation and danger. Alex must contend with extreme environmental hazards and Echoforms like Revenants and Cradleborn. At the heart of the Core stands Dr. Nathaniel Kryne, transformed into a formidable Echoform hybrid. Confronting Kryne requires strategy, skill, and moral choices — every decision shapes multiple possible endings.</p>
-
-  <h3>Echoforms and the Player’s Journey</h3>
-  <ul>
-    <li><strong>Lurkers:</strong> Watch quietly, a cautionary reminder of humanity’s loss.</li>
-    <li><strong>Shriekers:</strong> Panicked cries frozen in mutation, warning of danger.</li>
-    <li><strong>Wailers:</strong> The embodiment of suffering caused by Helix.</li>
-    <li><strong>Striders:</strong> Agile hunters, symbols of evolution under radiation stress.</li>
-    <li><strong>Bleachers:</strong> The devastating cost of unchecked mutation.</li>
-    <li><strong>Sirens & The Choir:</strong> Collective horror — a chorus of chaos.</li>
-    <li><strong>Revenants & Cradleborn:</strong> Apex threats representing ultimate corruption.</li>
-  </ul>
-
-  <h3>The Emotional Odyssey</h3>
-  <p>Radfall is more than survival; it’s an emotional odyssey. Players experience tension, sorrow, and haunting beauty across the zones. Alex’s journey is personal — a search for his sister, a confrontation with Kryne, and an ultimate decision about the fate of humanity.</p>
-
-  <h3>Finale</h3>
-  <p>The climax of the Core pushes players to their limits. Alex confronts the truth of Project Helix and must decide whether to destroy the Core, attempt a cure, or leverage the Echoforms. Every choice impacts the ending, creating a memorable emotional journey.</p>
-
+  <p>Alex faces Dr. Kryne, extreme radiation, Cradleborn and Revenants. Every decision affects the ending. The story here is long, immersive, full of tension, and packed with environmental clues, journals, and survivor stories — a full emotional journey from start to finish.</p>
+  <p>Within the Core, Alex navigates collapsing laboratories, radiation leaks, and mutated wildlife. He uncovers secret research notes detailing Project Helix’s true intentions, confronts ethical dilemmas, and battles enhanced Echoforms guarding the final chambers. The Core challenges both combat skills and moral choices, determining multiple possible endings based on decisions made.</p>
 </section>
 
 <footer>
   <p>© 2025 Radfall Development</p>
-  
+  <p id="footer-steam" onclick="window.open('https://store.steampowered.com/', '_blank')">🎮 Wishlist on Steam</p>
 </footer>
 
 <script>
